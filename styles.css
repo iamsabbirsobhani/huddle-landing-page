@@ -1,4 +1,5 @@
 body {
+    min-height: 100vh;
     background: url(images/bg-desktop.svg) no-repeat center /cover;
     background-color: #664baf;
     font-family: 'Poppins', sans-serif;
@@ -123,6 +124,7 @@ button:hover {
     text-align: center;
     color: white;
     flex-shrink: 0;
+    align-self: flex-end;
 }
 
 a {
