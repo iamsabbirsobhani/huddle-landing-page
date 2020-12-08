@@ -1,0 +1,290 @@
+body {
+    background: url(images/bg-desktop.svg) no-repeat center /cover;
+    background-color: #664baf;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.header {
+    width: 130px;
+    margin-bottom: 50px;
+}
+
+.item-1 {
+    width: 550px;
+}
+
+.image {
+    width: 500px;
+}
+
+.item-2 {
+    margin: 20px;
+    width: 500px;
+}
+
+div.item-2 h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 0px .1px 20px rgb(153, 153, 153);
+}
+
+div.item-2 p {
+    font-size: 18px;
+    color: white;
+}
+
+button {
+    font-size: 17px;
+    color: #664baf;
+    background-color: white;
+    box-shadow: .1px 0px 5px .1px white;
+    border: none;
+    width: 190px;
+    height: 55px;
+    border-radius: 50px;
+    transition: all .3s;
+    cursor: pointer;
+    outline: none;
+}
+
+button:hover {
+    box-shadow: .2px .1px 15px .2px rgb(26, 26, 26);
+    transform: scale(1.05, 1.05);
+    background-color: #FB54C2;
+    color: white;
+}
+
+.social {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.fab {
+    display: inline-block;
+    border-radius: 60px;
+    width: 45px;
+    height: 45px;
+    border: 1px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+    color: white;
+    transition: all .3s;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.fab:hover {
+    border-color: #FB54C2;
+    transform: translateY(-10px);
+}
+
+.fa-facebook-f {
+    margin: 5px;
+    padding: 11px 15px;
+}
+
+.fa-twitter {
+    margin: 5px;
+    padding: 11px 12px;
+}
+
+.fa-instagram {
+    margin: 5px;
+    padding: 11px 13px;
+}
+
+.fa-facebook-f:hover {
+    color: #FB54C2;
+}
+
+.fa-twitter:hover {
+    color: #FB54C2;
+}
+
+.fa-instagram:hover {
+    color: #FB54C2;
+}
+
+.attribution {
+    text-align: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+a {
+    color: white;
+    transition: color .3s;
+}
+
+a:hover {
+    color: #FB54C2;
+}
+
+a:active {
+    color: lightblue;
+}
+
+a:visited {
+    color: #cece8e;
+}
+
+/* Media Query*/
+
+/* For (Tablet && Less than PC/Laptop) devices */
+@media (min-width: 375px) and (max-width: 786px) {
+    body {
+        background: url(images/bg-mobile.svg) no-repeat;
+        background-size: 100%;
+        background-color: #664baf;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-left: unset;
+        margin-right: unset;
+    }
+
+    .header {
+        margin: unset;
+        margin-bottom: 30px;
+    }
+
+    .item-1 {
+        width: 300px;
+    }
+
+    .image {
+        width: 300px;
+        height: unset;
+    }
+
+    .item-2 {
+        margin: 15px;
+        text-align: center;
+        width: 300px;
+    }
+
+    div.item-2 h1 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    div.item-2 p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        margin-right: unset;
+    }
+
+    .attribution {
+        color: white;
+        margin: 0;
+        font-size: 15px;
+        padding-top: 20px;
+    }
+}
+
+/* For Mobile Device */
+@media (min-width: 320px) and (max-width: 375px) {
+    body {
+        background: url(images/bg-mobile.svg) no-repeat;
+        background-color: #674BB1;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+        margin-left: unset;
+        margin-right: unset;
+    }
+
+    .header {
+        margin: unset;
+        margin-bottom: 30px;
+    }
+
+    .item-1 {
+        width: 300px;
+    }
+
+    .image {
+        width: 300px;
+        height: unset;
+    }
+
+    .item-2 {
+        margin: 15px;
+        text-align: center;
+        width: 300px;
+    }
+
+    div.item-2 h1 {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    div.item-2 p {
+        text-align: center;
+        font-size: 13px;
+    }
+
+    button {
+        color: #664baf;
+        background-color: white;
+        box-shadow: .1px 0px 5px .1px white;
+        width: 190px;
+        height: 40px;
+    }
+
+    button:hover {
+        box-shadow: .2px .1px 15px .2px rgb(26, 26, 26);
+        transform: scale(1.05, 1.05);
+        background-color: #FB54C2;
+        color: white;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-right: 0px;
+    }
+
+    .attribution {
+        color: white;
+        margin: 0;
+        font-size: 12px;
+        padding-top: 20px;
+    }
+}
+
+/* End */
+
+/* Thank You For Checking 😊 */
+
+/* 06-Dec-2020 Made with ❤ Coded by Sabbir Sobhani */
